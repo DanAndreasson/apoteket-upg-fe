@@ -1,0 +1,17 @@
+@import "variables.scss";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing $spacing * 2;
+  background-color: $blue-500;
+  box-shadow: $box-shadow;
+  color: $white;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 32px;
+  color: $white;
+}

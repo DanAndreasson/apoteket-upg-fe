@@ -1,0 +1,47 @@
+@import "variables.scss";
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $gray-200;
+  color: $gray-900;
+  font-family: "Lato", sans-serif;
+  font-size: $font-size;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: $blue-500;
+  transition: $transition-duration-short all;
+
+  &:hover {
+    color: $blue-600;
+  }
+}
+
+button {
+  outline: none;
+  padding: $spacing;
+}
+
+input,
+textarea {
+  padding: $spacing / 2;
+  background-color: $white;
+  border: 1px solid $gray-600;
+  border-radius: $border-radius;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+}

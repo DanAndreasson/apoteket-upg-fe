@@ -1,0 +1,7 @@
+@import "variables.scss";
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(292px, 1fr));
+  grid-gap: $spacing * 2;
+}

@@ -1,0 +1,40 @@
+@import "variables.scss";
+
+.container {
+  padding: $spacing * 2;
+  display: flex;
+  align-items: center;
+
+  &:nth-child(even) {
+    background-color: $gray-100;
+  }
+}
+
+.image {
+  border: solid $spacing/2 $white;
+  background-color: $white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100px;
+  height: 75px;
+  margin-right: $spacing * 2;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.info {
+  margin-right: $spacing;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.actions {
+  flex: 1;
+  text-align: right;
+}

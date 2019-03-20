@@ -1,0 +1,71 @@
+@import "variables.scss";
+
+.container {
+  background-color: $white;
+  border-radius: $border-radius;
+  padding: $spacing;
+  box-shadow: $box-shadow;
+  display: flex;
+  flex-direction: column;
+  animation: pulse 3s infinite;
+}
+
+.image {
+  background-color: $gray-100;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  align-self: center;
+  margin: $spacing * 4 0;
+}
+
+.title,
+.description,
+.price,
+.buy {
+  padding: $spacing 0;
+  background-color: $gray-100;
+}
+
+.title {
+  width: 70%;
+}
+
+.description {
+  margin-top: $spacing;
+  width: 100%;
+}
+
+.actions {
+  margin-top: $spacing * 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 24px;
+  width: 10%;
+  background-color: $gray-100;
+}
+
+.buy {
+  width: 20%;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,6 +1,10 @@
-import { combineReducers } from 'redux'
-import api from './api'
+import { combineReducers } from "redux"
+import notifications from "reducers/notifications"
+import products from "reducers/products"
+import cart from "reducers/cart"
 
 export default combineReducers({
-	api
+  products,
+  cart,
+  notifications,
 })

@@ -1,0 +1,17 @@
+@import "variables.scss";
+
+.container {
+  position: absolute;
+  top: $spacing * 8;
+  right: $spacing * 4;
+  display: flex;
+  flex-direction: column;
+  transition: all $transition-duration-short;
+}
+
+.notification {
+  background-color: $gray-100;
+  border-radius: $border-radius;
+  padding: $spacing $spacing * 2;
+  margin-bottom: $spacing;
+}

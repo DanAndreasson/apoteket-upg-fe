@@ -1,20 +1,24 @@
-import React, { Component } from 'react';
-import Page from './containers/Page';
-import Page2 from './containers/Page2';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import './App.css';
+import React from "react"
+import { BrowserRouter as Router, Route } from "react-router-dom"
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <div>
-          <Route exact path="/" component={Page} />
-          <Route path="/page2" component={Page2} />
-        </div>
-      </Router>
-    );
-  }
-}
+import ProductIndex from "pages/ProductIndex"
+import CartShow from "pages/CartShow"
 
-export default App;
+import Header from "components/Header"
+import Notifications from "components/Notifications"
+
+import "normalize.css"
+import "./globals.scss"
+import "icons"
+
+const App = () => (
+  <Router>
+    <Header />
+
+    <Route path="/cart" component={CartShow} />
+    <Route exact path="/" component={ProductIndex} />
+    <Notifications />
+  </Router>
+)
+
+export default App
