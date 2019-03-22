@@ -39,7 +39,7 @@ const ProductIndex = ({
         />
       </header>
 
-      <ProductList showSkeletons={isFetching && Object.keys(data).length === 0} products={products} onBuy={addProductToCart} />
+      <ProductList showSkeletons={Object.keys(data).length === 0} products={products} onBuy={addProductToCart} />
     </main>
   )
 }
